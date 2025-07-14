@@ -10,7 +10,10 @@ import json
 import tempfile
 import speech_recognition as sr
 from flask import Flask, session
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = "a_very_secret_key"  # required for sessions
@@ -21,7 +24,8 @@ UPLOAD_FOLDER = os.path.join(app.root_path, 'static', 'responses')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # === Environment Setup ===
-os.environ["GROQ_API_KEY"] = "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"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 
 # === Load Menu ===
 with open("menu.json") as f:
@@ -33,7 +37,8 @@ embedder = SentenceTransformer('all-MiniLM-L6-v2')
 # === LangChain LLM ===
 llm = ChatGroq(
     temperature=0.5,
-    model_name="llama3-8b-8192"
+    model_name="llama3-8b-8192",
+    api_key=GROQ_API_KEY
 )
 
 
