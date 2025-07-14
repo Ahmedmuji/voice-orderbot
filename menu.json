@@ -1,0 +1,355 @@
+{
+    "Specials": [
+      {
+        "name": "O'N'G Special Family Deal",
+        "description": "4 Zinger, 4 Chicken Pcs, 1.5 Litre Drink",
+        "price": 2100
+      },
+      {
+        "name": "Five Leg Piece Chicken Deal",
+        "description": "Five leg pieces",
+        "price": 600
+      },
+      {
+        "name": "Big Bite Combo",
+        "description": "Burger, Fries, Regular Drink",
+        "price": 830
+      },
+      {
+        "name": "Zinger Jalapeno Combo",
+        "description": "Burger, Fries, Regular Drink",
+        "price": 800
+      },
+      {
+        "name": "Twisty Wrap Combo",
+        "description": "Wrap, Fries, Regular Drink",
+        "price": 520
+      },
+      {
+        "name": "Two Person Burger Deal",
+        "description": "2 Zinger, 2 Chicken Pcs, Fries, 1 Litre Drink",
+        "price": 1400
+      },
+      {
+        "name": "Two Piece Chicken Deal",
+        "description": "2 Chicken Pcs, Fries, Regular Drink",
+        "price": 600
+      },
+      {
+        "name": "Nine Piece Chicken Deal",
+        "description": "9 Chicken Pcs, 1.5 Litre Drink",
+        "price": 1600
+      },
+      {
+        "name": "Five Piece Chicken Deal",
+        "description": "5 Chicken Pcs, Fries, 1 Litre Drink",
+        "price": 1150
+      },
+      {
+        "name": "All In One Box",
+        "description": "Zinger Burger, Chicken Piece, Fries, Regular Drink",
+        "price": 830
+      },
+      {
+        "name": "Krunchy Combo",
+        "description": "Krunchy, Fries, Regular Drink",
+        "price": 550
+      },
+      {
+        "name": "Chicken Patty Combo",
+        "description": "Burger, Fries, Regular Drink",
+        "price": 530
+      },
+      {
+        "name": "Zinger Combo",
+        "description": "Zinger Burger, Fries, Regular Drink",
+        "price": 650
+      }
+    ],
+    "Snack Deals": [
+      {
+        "name": "Snack Deal 2",
+        "description": "4 Chicken Strips, Regular Drink, Fries",
+        "price": 550
+      },
+      {
+        "name": "Snack Deal 1",
+        "description": "4 Crispy Wings, 4 Hot Shot, 2 Chicken Strips, Regular Drink",
+        "price": 550
+      }
+    ],
+    "Kids Deals": [
+      {
+        "name": "Kids Deal 2",
+        "description": "Patty Burger, Fries, Toy, Slice",
+        "price": 500
+      },
+      {
+        "name": "Kids Deal 1",
+        "description": "4 Nuggets, Fries, Toy, Slice",
+        "price": 460
+      }
+    ],
+    "Burgers": [
+      {
+        "name": "Big Bite Burger",
+        "description": null,
+        "price": 680
+      },
+      {
+        "name": "Fish Grill Burger",
+        "description": null,
+        "price": 750
+      },
+      {
+        "name": "Fish Burger",
+        "description": null,
+        "price": 700
+      },
+      {
+        "name": "Zinger Jalapeno Burger",
+        "description": null,
+        "price": 550
+      },
+      {
+        "name": "Krunchy Burger",
+        "description": null,
+        "price": 300
+      },
+      {
+        "name": "Beef Grill Burger",
+        "description": null,
+        "price": 450
+      },
+      {
+        "name": "Chicken Grill Burger",
+        "description": null,
+        "price": 350
+      },
+      {
+        "name": "Chicken Patty Burger",
+        "description": null,
+        "price": 280
+      },
+      {
+        "name": "Zinger Burger",
+        "description": null,
+        "price": 400
+      }
+    ],
+    "Pizza": [
+      {
+        "name": "Stuff Crust",
+        "description": "Choice is Yours",
+        "price_from": 650
+      },
+      {
+        "name": "Calzone",
+        "description": "Chicken Tikka, Sauces, Onion, Capsicum, Tomato, Cheese, Olives",
+        "price_from": 590
+      },
+      {
+        "name": "Oven 'n' Grill Special",
+        "description": "Seekh Kabab, Fajita Chicken, Tikka Chicken, Onion, Capsicum, Jalapeno, Sweet Corn",
+        "price_from": 590
+      },
+      {
+        "name": "Cheese Supreme",
+        "description": "Tomato Sauce, Lots of Cheese",
+        "price_from": 550
+      },
+      {
+        "name": "Classic BBQ",
+        "description": "Grilled Chicken, Cheese, Olives, Capsicum, Onion, BBQ Sauce, Tomato Sauce",
+        "price_from": 550
+      },
+      {
+        "name": "Chicken Fajita",
+        "description": "Salsa Sauce, Fajita Chicken, Olives, Cheese",
+        "price_from": 550
+      },
+      {
+        "name": "Chicken Tikka",
+        "description": "Tomato Sauce, Tikka Chicken, Onion, Capsicum, Cheese",
+        "price_from": 550
+      },
+      {
+        "name": "Vegetarian",
+        "description": "Tomato Sauce, Mushrooms, Olives, Sweet Corn, Onion, Capsicum, Cheese",
+        "price_from": 480
+      },
+      {
+        "name": "Cheesy Bite Special",
+        "description": "Chicken Tikka, Olives, Capsicum, Stuff Cheese, Tomato Sauce, Onion",
+        "price_from": 650
+      },
+      {
+        "name": "Crown Crust",
+        "description": "Chicken Tikka, Olives, Onion, Capsicum, Mayo Garlic On The Top",
+        "price_from": 590
+      }
+    ],
+    "Pasta": [
+      {
+        "name": "Alfredo Pasta",
+        "description": null,
+        "price_from": 520
+      }
+    ],
+    "Side Order": [
+      {
+        "name": "Full Fried Chicken",
+        "description": null,
+        "price": 1550
+      },
+      {
+        "name": "Crispy Wings",
+        "description": "10 Pcs",
+        "price": 500
+      },
+      {
+        "name": "Hot Shot",
+        "description": "10 Pcs",
+        "price": 500
+      },
+      {
+        "name": "Loaded Fries",
+        "description": null,
+        "price": 600
+      },
+      {
+        "name": "Plain Fries",
+        "description": null,
+        "price": 250
+      },
+      {
+        "name": "Nuggets",
+        "description": "6 Pcs",
+        "price": 300
+      },
+      {
+        "name": "Five Chicken Pieces",
+        "description": null,
+        "price": 900
+      },
+      {
+        "name": "Two Chicken Pieces",
+        "description": null,
+        "price": 380
+      },
+      {
+        "name": "Chicken Piece",
+        "description": null,
+        "price": 200
+      }
+    ],
+    "Wraps": [
+      {
+        "name": "Twisty Wrap",
+        "description": null,
+        "price": 250
+      },
+      {
+        "name": "Seekh Kabab Wrap",
+        "description": null,
+        "price": 350
+      },
+      {
+        "name": "Zinger Crispy Wrap",
+        "description": null,
+        "price": 300
+      }
+    ],
+    "Beverages": [
+      {
+        "name": "Cardamom Chai",
+        "description": null,
+        "price": 150
+      },
+      {
+        "name": "Hot Chocolate",
+        "description": null,
+        "price": 220
+      },
+      {
+        "name": "Soft Drink",
+        "description": null,
+        "price_from": 100
+      },
+      {
+        "name": "Mineral Water",
+        "description": null,
+        "price_from": 60
+      },
+      {
+        "name": "Slice",
+        "description": "Small",
+        "price": 60
+      },
+      {
+        "name": "Double Espresso",
+        "description": null,
+        "price": 220
+      },
+      {
+        "name": "Espresso",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Mochaccino",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Long Black Cup",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Latte",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Cappuccino",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Kashmiri Chai",
+        "description": null,
+        "price": 180
+      },
+      {
+        "name": "Karak Chai",
+        "description": null,
+        "price": 120
+      }
+    ],
+    "Deals": [
+      {
+        "name": "Eid Celebration",
+        "description": "4 Zinger Burgers + 1 Large Calzone Pizza + 1 Plain Fries + 1.5 Liter Drink",
+        "price": 3199
+      },
+      {
+        "name": "Loaded Krunch",
+        "description": "2 Krunchy Burgers + Loaded Fried + 1 Liter Drink",
+        "price": 1199
+      }
+    ],
+    "Extra": [
+      {
+        "name": "Dip Sauce",
+        "description": null,
+        "price": 50
+      },
+      {
+        "name": "Cheese Slice",
+        "description": null,
+        "price": 60
+      }
+    ]
+  }
+  

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Voice Assistant</title>
+</head>
+<body>
+  <h1>🎙️ Restaurant Voice Assistant</h1>
+
+  <button onclick="startRecording()">Start Recording</button>
+  <button onclick="stopRecording()">Stop & Send</button>
+
+  <p><strong>You said:</strong> <span id="userText"></span></p>
+  <p><strong>Bot:</strong> <span id="botText"></span></p>
+  <audio id="botAudio" controls></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.6.2/RecordRTC.min.js"></script>
+  <script>
+    let recorder;
+    let stream;
+
+    async function startRecording() {
+      // Stop any existing stream and recorder
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+      if (recorder) {
+        recorder.destroy();
+      }
+
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      recorder = RecordRTC(stream, {
+        type: 'audio',
+        mimeType: 'audio/wav',
+        recorderType: StereoAudioRecorder,
+        desiredSampRate: 16000,
+        numberOfAudioChannels: 1
+      });
+
+      recorder.startRecording();
+    }
+
+    async function stopRecording() {
+      await recorder.stopRecording(async () => {
+        const blob = recorder.getBlob();
+        
+        const formData = new FormData();
+        formData.append("audio", blob, `voice_${Date.now()}.wav`);
+
+        const response = await fetch("/process_audio", {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await response.json();
+        if (data.error) {
+          alert(data.error);
+          return;
+        }
+
+        document.getElementById("userText").innerText = data.user_text;
+        document.getElementById("botText").innerText = data.bot_text;
+        document.getElementById("botAudio").src = data.audio_url;
+        
+        // Clean up after processing is complete
+        stream.getTracks().forEach(track => track.stop());
+        recorder.destroy();
+        stream = null;
+        recorder = null;
+      });
+    }
+  </script>
+</body>
+</html>
